@@ -15,12 +15,12 @@ export default function NavList({ isscrolled }) {
 				linkItem='/'
 				text='Home'
 			/>
-			<NavItem isscrolled={isscrolled} linkItem='/About/' text='About' />
-			<NavItem isscrolled={isscrolled} linkItem='/Services/' text='Services' />
-			<NavItem isscrolled={isscrolled} linkItem='/Blog/' text='Blog' />
+			<NavItem isscrolled={isscrolled} linkItem='/about/' text='About' />
+			<NavItem isscrolled={isscrolled} linkItem='/services/' text='Services' />
+			<NavItem isscrolled={isscrolled} linkItem='/blog/' text='Blog' />
 			<NavMobiCTAButton
 				text='Call To Action'
-				linkItem='/Contact/'
+				linkItem='/contact/'
 				mobDisplay='none'
 			/>
 		</NavLinkContainer>

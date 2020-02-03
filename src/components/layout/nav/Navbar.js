@@ -1,8 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 
 import styled from 'styled-components';
 
-import { NavProvider, NavContext } from '../../context/NavContext';
+import { NavProvider } from '../../context/NavContext';
 
 import device from '../../utilities/MediaQueries';
 import NavList from './NavList';
@@ -28,7 +28,7 @@ export default function Navbar() {
 				<NavCTAButton
 					isscrolled={isscrolled}
 					text='Get In Touch'
-					linkItem='/contact/'
+					linkItem='/Contact/'
 					mobDisplay='none'
 				/>
 			</Nav>

@@ -3,14 +3,15 @@ import '../App.css';
 import { Router } from '@reach/router';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import Home from './Home';
-import About from './About';
+import About from './about/index';
 import Services from './services/index.js';
-import Blog from './Blog';
+import Blog from './blog/index';
 import SEOPage from './services/search-engine-optimisation';
 import SMM from './services/social-media-marketing';
 import Branding from './services/branding-and-strategy';
 import Web from './services/web-design-and-development';
-import Contact from './Contact';
+import Contact from './contact/index';
+import Err from './404/index';
 
 import SEO from 'react-seo-component';
 
@@ -45,13 +46,13 @@ function App() {
 				<Router>
 					<Home path='/' />
 
-					<About path='/About/' />
-					<Services path='/Services/' />
+					<About path='/about/' />
+					<Services path='/services/' />
 
-					<Blog path='/Blog/' />
+					<Blog path='/blog/' />
 
-					<Contact path='/Contact/' />
-
+					<Contact path='/contact/' />
+					<Err path='/404' />
 					<SEOPage path='/services/search-engine-optimisation' />
 					<SMM path='/services/social-media-marketing' />
 					<Branding path='/services/branding-and-strategy' />

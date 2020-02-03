@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import device from '../utilities/MediaQueries';
-import { Link } from 'gatsby';
+
 import BottomBar from '../layout/BottomBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {

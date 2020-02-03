@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import device from '../components/utilities/MediaQueries';
-import { query } from '../components/queries/AllBlogPosts';
+import device from '../../components/utilities/MediaQueries';
+import { query } from '../../components/queries/AllBlogPosts';
 
 //sections
 
-import PageHeadings from '../components/utilities/typography/PageHeadings';
-import Section from '../components/layout/Section';
+import PageHeadings from '../../components/utilities/typography/PageHeadings';
+import Section from '../../components/layout/Section';
 
-import Layout from '../components/layout/Layout';
+import Layout from '../../components/layout/Layout';
 
 export default function Blog() {
 	return (

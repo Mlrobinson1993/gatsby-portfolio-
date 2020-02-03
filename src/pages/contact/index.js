@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import styled from 'styled-components';
-import device from '../components/utilities/MediaQueries';
-import Layout from '../components/layout/Layout';
+import device from '../../components/utilities/MediaQueries';
+import Layout from '../../components/layout/Layout';
 
-import PagesContact from '../components/forms/PagesContact';
-import PageHeadings from '../components/utilities/typography/PageHeadings';
-import ContactIcons from '../components/PageSections/ContactIcons';
+import PagesContact from '../../components/forms/PagesContact';
+import PageHeadings from '../../components/utilities/typography/PageHeadings';
+import ContactIcons from '../../components/PageSections/ContactIcons';
 
 export default function Contact() {
 	return (

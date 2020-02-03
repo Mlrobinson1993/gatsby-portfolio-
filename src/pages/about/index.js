@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import device from '../components/utilities/MediaQueries';
+import device from '../../components/utilities/MediaQueries';
 
-import CTABanner from '../components/utilities/CTABanner';
-import PagesContact from '../components/forms/PagesContact';
-import PageHeadings from '../components/utilities/typography/PageHeadings';
-import RecentPosts from '../components/sections/RecentPosts';
-import PrevWork from '../components/sections/PrevWork';
-import Layout from '../components/layout/Layout';
-import mikey from '../../posts/images/me-colourful.jpg';
+import CTABanner from '../../components/utilities/CTABanner';
+import PagesContact from '../../components/forms/PagesContact';
+import PageHeadings from '../../components/utilities/typography/PageHeadings';
+import RecentPosts from '../../components/sections/RecentPosts';
+import PrevWork from '../../components/sections/PrevWork';
+import Layout from '../../components/layout/Layout';
+import mikey from '../../../posts/images/me-colourful.jpg';
 
 export default function About() {
 	return (
