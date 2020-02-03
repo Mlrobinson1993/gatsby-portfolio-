@@ -45,14 +45,14 @@ function App() {
 			>
 				<Router>
 					<Home path='/' />
-					<About path='/About/' />
+
 					<About path='/about/' />
 					<Services path='/services/' />
-					<Services path='/Services/' />
+
 					<Blog path='/blog/' />
-					<Blog path='/Blog/' />
+
 					<Contact path='/contact/' />
-					<Contact path='/Contact/' />
+
 					<SEOPage path='/services/search-engine-optimisation' />
 					<SMM path='/services/social-media-marketing' />
 					<Branding path='/services/branding-and-strategy' />
