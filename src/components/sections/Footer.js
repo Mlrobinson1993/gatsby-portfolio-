@@ -69,8 +69,8 @@ export default function Footer() {
 					<Legend>Join my mailing list</Legend>
 					<Fieldset>
 						<LeadGenInput placeholder='JaneDoe@domain.co.uk'></LeadGenInput>
-						<input type='hidden' name='form-name' value='contact' />
 						<SubmitBtn type='submit'>Submit</SubmitBtn>
+						<input type='hidden' name='form-name' value='contact' />
 					</Fieldset>
 				</LeadGenContainer>
 			</ContentContainer>
