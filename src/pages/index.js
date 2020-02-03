@@ -11,8 +11,9 @@ import SMM from './services/social-media-marketing';
 import Branding from './services/branding-and-strategy';
 import Web from './services/web-design-and-development';
 import Contact from './Contact';
-
+import { createGlobalStyle } from 'styled-components';
 import SEO from 'react-seo-component';
+
 function App() {
 	const {
 		title,
@@ -34,6 +35,7 @@ function App() {
 				siteLocale={siteLocale}
 				twitterUsername={twitterUsername}
 			/>
+			<GlobalStyle />
 			<div
 				className='App'
 				style={{
@@ -53,8 +55,18 @@ function App() {
 					<Web path='/services/web-design-and-development' />
 				</Router>
 			</div>
-		</>
+		</GlobalStyle>
 	);
 }
+
+const GlobalStyle = createGlobalStyle`
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 10px;
+	font-family: 'montserrat', sans-serif;
+}
+`;
 
 export default App;

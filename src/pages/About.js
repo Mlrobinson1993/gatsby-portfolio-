@@ -8,7 +8,6 @@ import PageHeadings from '../components/utilities/typography/PageHeadings';
 import RecentPosts from '../components/sections/RecentPosts';
 import PrevWork from '../components/sections/PrevWork';
 import Layout from '../components/layout/Layout';
-
 import mikey from '../../posts/images/me-colourful.jpg';
 
 export default function About() {
