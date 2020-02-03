@@ -11,9 +11,6 @@ import Section from '../components/layout/Section';
 import Layout from '../components/layout/Layout';
 
 export default function Blog() {
-	useEffect(() => {
-		return window.scrollTo(0, 0);
-	}, []);
 	return (
 		<Layout>
 			<main className='blog'>

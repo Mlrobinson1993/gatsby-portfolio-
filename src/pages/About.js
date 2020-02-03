@@ -12,9 +12,6 @@ import Layout from '../components/layout/Layout';
 import mikey from '../../posts/images/me-colourful.jpg';
 
 export default function About() {
-	useEffect(() => {
-		return window.scrollTo(0, 0);
-	}, []);
 	return (
 		<>
 			<Layout>

@@ -9,9 +9,6 @@ import PageHeadings from '../components/utilities/typography/PageHeadings';
 import ContactIcons from '../components/PageSections/ContactIcons';
 
 export default function Contact() {
-	useEffect(() => {
-		return window.scrollTo(0, 0);
-	}, []);
 	return (
 		<>
 			<Layout>

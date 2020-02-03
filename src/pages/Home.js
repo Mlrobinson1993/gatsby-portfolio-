@@ -10,9 +10,6 @@ import CTABanner from '../components/utilities/CTABanner';
 import RecentPosts from '../components/sections/RecentPosts';
 
 export default function Home() {
-	useEffect(() => {
-		return window.scrollTo(0, 0);
-	}, []);
 	return (
 		<>
 			<Layout>

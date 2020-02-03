@@ -14,9 +14,6 @@ import BrandingIMG from '../../../posts/images/branding-and-strategy-meeting.jpg
 import SMMIMG from '../../../posts/images/social-media-marketing.jpg';
 
 export default function Services() {
-	useEffect(() => {
-		return window.scrollTo(0, 0);
-	}, []);
 	return (
 		<>
 			<Layout>
