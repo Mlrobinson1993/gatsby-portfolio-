@@ -16,7 +16,10 @@ export default function ContactIcons() {
 
 			<IconContainer background='#e09124'>
 				<h3>LIVE CHAT</h3>
-				<LiveChatContact>
+				<LiveChatContact
+					href='https://facebook.com/mrobinsonwebdev'
+					target='_blank'
+				>
 					<FontAwesomeIcon
 						background='#e09124'
 						icon={faCommentAlt}
@@ -148,7 +151,7 @@ const EmailContact = styled.a`
 	cursor: pointer;
 `;
 
-const LiveChatContact = styled.button`
+const LiveChatContact = styled.a`
 	height: 100%;
 	width: 100%;
 	border: none;

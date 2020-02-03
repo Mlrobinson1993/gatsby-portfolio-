@@ -50,5 +50,13 @@ module.exports = {
 				},
 			},
 		},
+		{
+			resolve: 'gatsby-plugin-hubspot',
+			options: {
+				trackingCode: '6797356',
+				respectDNT: true,
+				productionOnly: true,
+			},
+		},
 	],
 };
