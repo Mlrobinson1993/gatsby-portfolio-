@@ -8,7 +8,12 @@ export default function HeroContact() {
 	return (
 		<ContentContainer>
 			<FormContainer>
-				<ContactForm>
+				<ContactForm
+					name='pageContact'
+					method='post'
+					data-netlify='true'
+					data-netlify-honeypot='bot-field'
+				>
 					<FieldSet>
 						<Title>Let's talk</Title>
 						<Label htmlFor='name'>Name</Label>
@@ -28,6 +33,7 @@ export default function HeroContact() {
 							name='message'
 							placeholder='I need a...'
 						></FormTextField>
+						<input type='hidden' name='form-name' value='contact' />
 						<SubmitBtn>Book a free consultation</SubmitBtn>
 					</FieldSet>
 				</ContactForm>

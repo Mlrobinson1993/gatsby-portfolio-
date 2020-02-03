@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import device from '../utilities/MediaQueries';
 import { Link } from 'gatsby';
-import BottomBar from '../layout/BottomBar'
+import BottomBar from '../layout/BottomBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faFacebookF,
@@ -15,61 +15,67 @@ import logo from '../../../posts/images/m-robinson-web-developer-logo.png';
 export default function Footer() {
 	return (
 		<>
-		<ContentContainer>
-			<LogoContainer>
-				<FooterLogo src={logo} />
-			</LogoContainer>
-			<SocialsContainer>
-				<IconContainer background='#3b5998'>
-					<a
-						href='https://facebook.com/mrobinsonwebdev'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						<FontAwesomeIcon
-							icon={faFacebookF}
-							size='3x'
-							color='white'
-						></FontAwesomeIcon>
-					</a>
-				</IconContainer>
-				<IconContainer background='#38A1F3'>
-					<a
-						href='https://twitter.com/mikeydevs'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						<FontAwesomeIcon
-							icon={faTwitter}
-							size='3x'
-							color='white'
-						></FontAwesomeIcon>
-					</a>
-				</IconContainer>
-				<IconContainer backgroundImg='linear-gradient(-135deg,#1400c8,#b900b4,#f50000)'>
-					<a
-						href='https://instagram.com/thetravelling.dev'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						<FontAwesomeIcon
-							icon={faInstagram}
-							size='3x'
-							color='white'
-						></FontAwesomeIcon>
-					</a>
-				</IconContainer>
-			</SocialsContainer>
-			<LeadGenContainer>
-				<Legend>Join my mailing list</Legend>
-				<Fieldset>
-					<LeadGenInput placeholder='JaneDoe@domain.co.uk'></LeadGenInput>
-					<SubmitBtn type='submit'>Submit</SubmitBtn>
-				</Fieldset>
-			</LeadGenContainer>
-		</ContentContainer>
-			<BottomBar/>
-			</>
+			<ContentContainer>
+				<LogoContainer>
+					<FooterLogo src={logo} />
+				</LogoContainer>
+				<SocialsContainer>
+					<IconContainer background='#3b5998'>
+						<a
+							href='https://facebook.com/mrobinsonwebdev'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FontAwesomeIcon
+								icon={faFacebookF}
+								size='3x'
+								color='white'
+							></FontAwesomeIcon>
+						</a>
+					</IconContainer>
+					<IconContainer background='#38A1F3'>
+						<a
+							href='https://twitter.com/mikeydevs'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FontAwesomeIcon
+								icon={faTwitter}
+								size='3x'
+								color='white'
+							></FontAwesomeIcon>
+						</a>
+					</IconContainer>
+					<IconContainer backgroundImg='linear-gradient(-135deg,#1400c8,#b900b4,#f50000)'>
+						<a
+							href='https://instagram.com/thetravelling.dev'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FontAwesomeIcon
+								icon={faInstagram}
+								size='3x'
+								color='white'
+							></FontAwesomeIcon>
+						</a>
+					</IconContainer>
+				</SocialsContainer>
+				<LeadGenContainer
+					name='lead gen form'
+					method='post'
+					data-netlify='true'
+					data-netlify-honeypot='bot-field'
+				>
+					<Legend>Join my mailing list</Legend>
+					<Fieldset>
+						<LeadGenInput placeholder='JaneDoe@domain.co.uk'></LeadGenInput>
+						<input type='hidden' name='form-name' value='contact' />
+						<SubmitBtn type='submit'>Submit</SubmitBtn>
+					</Fieldset>
+				</LeadGenContainer>
+			</ContentContainer>
+			<BottomBar />
+		</>
 	);
 }
 
