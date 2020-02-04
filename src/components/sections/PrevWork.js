@@ -30,25 +30,29 @@ export default function PrevWork() {
 	`);
 
 	let imgArr = [];
-	data.allFile.edges.forEach(node => {
-		imgArr.push({
-			img: node.node.childImageSharp.fluid,
-			altText: node.node.base
+	let imgObj = { marketingJob: {}, plastererJob: {}, painterJob: {} };
+	data.allFile.edges.forEach((node, index) => {
+		if (node.node.base.includes('market')) {
+			imgObj.marketingJob.img = node.node.childImageSharp.fluid;
+			imgObj.marketingJob.altText = node.node.base
 				.split('.')[0]
 				.split('-')
-				.join(' '),
-		});
+				.join(' ');
+		} else if (node.node.base.includes('plastering')) {
+			imgObj.plastererJob.img = node.node.childImageSharp.fluid;
+			imgObj.plastererJob.altText = node.node.base
+				.split('.')[0]
+				.split('-')
+				.join(' ');
+		} else if (node.node.base.includes('painter')) {
+			imgObj.painterJob.img = node.node.childImageSharp.fluid;
+			imgObj.painterJob.altText = node.node.base
+				.split('.')[0]
+				.split('-')
+				.join(' ');
+		}
 	});
-	console.log(imgArr);
-	// data.allFile.edges.forEach(node => {
-	// 	imgArr.push({
-	// 		img: node.childImageSharp.fluid,
-	// 		alt: node.base.split('.')[0],
-	// 	});
-	// });
 
-	// console.log(imgArr);
-	//change file extension names to something containing 'work' and then map them and create cards with the result
 	return (
 		<Section background='#f7f9fb' bottom='0'>
 			<ContentContainer>
@@ -61,22 +65,22 @@ export default function PrevWork() {
 					<CardBottomCaption
 						title="Let's Market"
 						service='Web Design'
-						src={imgArr[1].img}
-						alt={imgArr[1].altText}
+						src={imgObj.marketingJob.img}
+						alt={imgObj.marketingJob.altText}
 						linkTo='http://letsmarket.netlify.com/'
 					/>
 					<CardBottomCaption
 						title='Paul The Painter Decorator'
 						service='Web Design / Branding / SEO'
-						src={imgArr[2].img}
-						alt={imgArr[2].altText}
+						src={imgObj.painterJob.img}
+						alt={imgObj.painterJob.altText}
 						linkTo='https://www.paulthepainterdecorator.co.uk'
 					/>
 					<CardBottomCaption
 						title='Mattastic Plastering'
 						service='Web Design / Branding / SEO'
-						src={imgArr[0].img}
-						alt={imgArr[0].altText}
+						src={imgObj.plastererJob.img}
+						alt={imgObj.plastererJob.altText}
 						linkTo='/'
 					/>
 				</CardContainer>

@@ -28,7 +28,6 @@ export default function About() {
 								base64
 								sizes
 								srcSet
-
 								aspectRatio
 								src
 							}
@@ -38,6 +37,8 @@ export default function About() {
 			}
 		}
 	`);
+
+	console.log(data.allFile.edges[0].node.id);
 	return (
 		<>
 			<Layout>
@@ -51,13 +52,14 @@ export default function About() {
 						/>
 						<IntroContainer>
 							<IMGContainer scale='1.75'>
-								{data.allFile.edges.map(node => (
+								{data.allFile.edges.map((node, key) => (
 									<IMG1
 										sizes={node.node.childImageSharp.fluid}
 										alt={node.node.base
 											.split('.')[0]
 											.split('-')
 											.join(' ')}
+										key={node.node.id}
 									/>
 								))}
 							</IMGContainer>

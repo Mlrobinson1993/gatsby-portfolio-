@@ -31,18 +31,28 @@ export default function Services() {
 		}
 	`);
 
-	let imgArr = [];
+	let imgObj = { branding: {}, webDev: {}, SMM: {}, SEO: {} };
 	data.allFile.edges.forEach(node => {
-		imgArr.push({
-			img: node.node.childImageSharp.fluid,
-			altText: node.node.base
-				.split('.')[0]
-				.split('-')
-				.join(' '),
-		});
+		if (node.node.base.includes('branding-and-strategy-service-image')) {
+			imgObj.branding.img = node.node.childImageSharp.fluid;
+			imgObj.branding.altText = node.node.base;
+		} else if (
+			node.node.base.includes('social-media-marketing-service-image')
+		) {
+			imgObj.SMM.img = node.node.childImageSharp.fluid;
+			imgObj.SMM.altText = node.node.base;
+		} else if (
+			node.node.base.includes('web-design-and-development-service-image')
+		) {
+			imgObj.webDev.img = node.node.childImageSharp.fluid;
+			imgObj.webDev.altText = node.node.base;
+		} else if (
+			node.node.base.includes('google-search-engine-optimisation-service-image')
+		) {
+			imgObj.SEO.img = node.node.childImageSharp.fluid;
+			imgObj.SEO.altText = node.node.base;
+		}
 	});
-
-	console.log(imgArr);
 
 	return (
 		<>
@@ -60,8 +70,8 @@ export default function Services() {
 						<ContentContainer>
 							<ServicesSection
 								lineBreak='true'
-								imgSrc={imgArr[1].img}
-								imgAlt={imgArr[1].altText}
+								imgSrc={imgObj.webDev.img}
+								imgAlt={imgObj.webDev.altText}
 								heading='Web Design'
 								LightText=' & Development'
 								text="We help you to create fantastic user experience for your customers from the moment they set eyes opon your brand. Starting with your website design. We'll create a responsive, fast and conversion-rate-optimised website and help to turn your leads into conversions."
@@ -71,8 +81,8 @@ export default function Services() {
 							<ServicesSection
 								lineBreak='true'
 								flexDirection='row-reverse'
-								imgSrc={imgArr[1].img}
-								imgAlt={imgArr[1].altText}
+								imgSrc={imgObj.SMM.img}
+								imgAlt={imgObj.SMM.altText}
 								heading='Social Media'
 								LightText='Marketing (SMM)'
 								text="Our social media marketing can help you get your business in front of thousands of eyes, every day. If you're not on social media in 2020, you're behind the curve. Your competitors are already leveraging the amount of time your audience spends looking at their phones every day, and you should too."
@@ -81,8 +91,8 @@ export default function Services() {
 							/>
 							<ServicesSection
 								lineBreak='true'
-								imgSrc={imgArr[3].img}
-								imgAlt={imgArr[3].altText}
+								imgSrc={imgObj.SEO.img}
+								imgAlt={imgObj.SEO.altText}
 								heading='Search Engine'
 								LightText='Optimisation (SEO)'
 								text="Ranking highly on Google is a tough task. That's why our SEO experts keep on top of the latest industry trends and techniques to get your business onto that coveted first page."
@@ -91,8 +101,8 @@ export default function Services() {
 							/>
 							<ServicesSection
 								flexDirection='row-reverse'
-								imgSrc={imgArr[0].img}
-								imgAlt={imgArr[0].altText}
+								imgSrc={imgObj.branding.img}
+								imgAlt={imgObj.branding.altText}
 								heading='Branding'
 								LightText=' & Strategy'
 								text="Whether you're just starting out or an industry veteran, the importance of branding for your business is second-to-none. Great brands build great relationships and loyal customer bases, and that's what we're going to help you achieve. "
