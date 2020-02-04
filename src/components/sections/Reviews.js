@@ -43,7 +43,7 @@ export default function Reviews() {
 					/>
 				</ReviewContainer>
 				<CTAContainer>
-					<CTAButtonOrange linkTo='/Contact/' text='Get a quote' />
+					<CTAButtonOrange linkTo='/contact/' text='Get a quote' />
 				</CTAContainer>
 			</ContentContainer>
 		</Section>
