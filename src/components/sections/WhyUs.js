@@ -46,6 +46,7 @@ export default function WhyUs() {
 				<CTAButtonBlue
 					width='25%'
 					align='center'
+					linkTo='/contact/'
 					text='LETS GET STARTED'
 				></CTAButtonBlue>
 			</WhyUsSection>

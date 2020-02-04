@@ -8,9 +8,36 @@ import PageHeadings from '../../components/utilities/typography/PageHeadings';
 import RecentPosts from '../../components/sections/RecentPosts';
 import PrevWork from '../../components/sections/PrevWork';
 import Layout from '../../components/layout/Layout';
-import mikey from '../../../posts/images/me-colourful.jpg';
+// import mikey from '../../../posts/images/mikey-robinson-the-web-designer-developer.jpg';
+import Img from 'gatsby-image';
+import { useStaticQuery, graphql } from 'gatsby';
 
 export default function About() {
+	const data = useStaticQuery(graphql`
+		query AboutQuery {
+			allFile(
+				filter: {
+					relativePath: { regex: "/mikey-robinson-the-web-designer-developer/" }
+				}
+			) {
+				edges {
+					node {
+						base
+						childImageSharp {
+							fluid {
+								base64
+								sizes
+								srcSet
+
+								aspectRatio
+								src
+							}
+						}
+					}
+				}
+			}
+		}
+	`);
 	return (
 		<>
 			<Layout>
@@ -24,7 +51,15 @@ export default function About() {
 						/>
 						<IntroContainer>
 							<IMGContainer scale='1.75'>
-								<IMG1 src={mikey} alt='' />
+								{data.allFile.edges.map(node => (
+									<IMG1
+										sizes={node.node.childImageSharp.fluid}
+										alt={node.node.base
+											.split('.')[0]
+											.split('-')
+											.join(' ')}
+									/>
+								))}
 							</IMGContainer>
 							<TextContainer>
 								<Heading>
@@ -114,7 +149,7 @@ const IMGContainer = styled.figure`
 	}
 `;
 
-const IMG1 = styled.img`
+const IMG1 = styled(Img)`
 	position: relative;
 	z-index: 0;
 	height: 300px;

@@ -28,7 +28,7 @@ export default function Navbar() {
 				<NavCTAButton
 					isscrolled={isscrolled}
 					text='Get In Touch'
-					linkItem='/Contact/'
+					linkItem='/contact/'
 					mobDisplay='none'
 				/>
 			</Nav>

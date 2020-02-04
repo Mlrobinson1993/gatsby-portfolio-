@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import device from '../utilities/MediaQueries';
 import { Link } from 'gatsby';
+import Img from 'gatsby-image';
 export default function ServicesSection({
 	imgSrc,
 	heading,
@@ -11,10 +12,11 @@ export default function ServicesSection({
 	lineBreak,
 	LinkText,
 	linkTo,
+	imgAlt,
 }) {
 	return (
 		<Container flexDirection={flexDirection}>
-			<Avatar src={imgSrc} />
+			<Avatar sizes={imgSrc} alt={imgAlt} />
 
 			<Caption>
 				<Heading>
@@ -56,7 +58,7 @@ const Container = styled.figure`
 	}
 	`;
 
-const Avatar = styled.img`
+const Avatar = styled(Img)`
 	width: 400px;
 	height: 400px;
 	border-radius: 50%;

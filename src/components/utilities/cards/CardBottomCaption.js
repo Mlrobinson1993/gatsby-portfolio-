@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import device from '../MediaQueries';
+import Img from 'gatsby-image';
 
 //how can i change this to a functional component?
 
@@ -11,7 +12,7 @@ class CardBottomCaption extends Component {
 			<Link href={linkTo} target='_blank'>
 				<Card>
 					<ImageContainer>
-						<IMG src={src} alt={alt} />
+						<IMG sizes={src} alt={alt} />
 					</ImageContainer>
 					<CaptionContainer>
 						<CaptionBold color={color}>{title}</CaptionBold>
@@ -69,7 +70,7 @@ const ImageContainer = styled.div`
 	overflow: hidden;
 `;
 
-const IMG = styled.img`
+const IMG = styled(Img)`
 	margin: auto 0;
 
 	min-width: 100%;

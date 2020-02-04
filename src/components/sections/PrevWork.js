@@ -4,12 +4,51 @@ import Section from '../layout/Section';
 import device from '../utilities/MediaQueries';
 import CardBottomCaption from '../utilities/cards/CardBottomCaption';
 import SectionHeadings from '../utilities/typography/SectionHeadings';
-
-import MarketIMG from '../../../posts/images/marketing-business-logo.png';
-import PTPIMG from '../../../posts/images/construction-painter-business-logo.png';
-import MattIMG from '../../../posts/images/construction-plastering-business-logo.png';
+import { useStaticQuery, graphql } from 'gatsby';
 
 export default function PrevWork() {
+	const data = useStaticQuery(graphql`
+		query WorkQuery {
+			allFile(filter: { relativePath: { regex: "/prevwork/" } }) {
+				edges {
+					node {
+						base
+						childImageSharp {
+							fluid {
+								base64
+								sizes
+								srcSet
+								tracedSVG
+								aspectRatio
+								src
+							}
+						}
+					}
+				}
+			}
+		}
+	`);
+
+	let imgArr = [];
+	data.allFile.edges.forEach(node => {
+		imgArr.push({
+			img: node.node.childImageSharp.fluid,
+			altText: node.node.base
+				.split('.')[0]
+				.split('-')
+				.join(' '),
+		});
+	});
+	console.log(imgArr);
+	// data.allFile.edges.forEach(node => {
+	// 	imgArr.push({
+	// 		img: node.childImageSharp.fluid,
+	// 		alt: node.base.split('.')[0],
+	// 	});
+	// });
+
+	// console.log(imgArr);
+	//change file extension names to something containing 'work' and then map them and create cards with the result
 	return (
 		<Section background='#f7f9fb' bottom='0'>
 			<ContentContainer>
@@ -22,22 +61,22 @@ export default function PrevWork() {
 					<CardBottomCaption
 						title="Let's Market"
 						service='Web Design'
-						src={MarketIMG}
-						alt="let's market hero page for web design and development service portfolio"
+						src={imgArr[1].img}
+						alt={imgArr[1].altText}
 						linkTo='http://letsmarket.netlify.com/'
 					/>
 					<CardBottomCaption
 						title='Paul The Painter Decorator'
 						service='Web Design / Branding / SEO'
-						src={PTPIMG}
-						alt='Paul the painter hero page for web design and development, branding and strategy and search engine optimisation service portfolio'
+						src={imgArr[2].img}
+						alt={imgArr[2].altText}
 						linkTo='https://www.paulthepainterdecorator.co.uk'
 					/>
 					<CardBottomCaption
 						title='Mattastic Plastering'
 						service='Web Design / Branding / SEO'
-						src={MattIMG}
-						alt='Mattastic Plastering hero page for web design and development, branding and strategy service portfolio'
+						src={imgArr[0].img}
+						alt={imgArr[0].altText}
 						linkTo='/'
 					/>
 				</CardContainer>
@@ -76,36 +115,4 @@ const CardContainer = styled.div`
 		justify-content: center;
 		align-items: center;
 	}
-`;
-
-const TextContainer = styled.div`
-	margin: 2rem;
-`;
-
-const SmallHeading = styled.h2`
-	text-transform: uppercase;
-	font-size: 1.2rem;
-	padding-left: 0.2rem;
-	margin-bottom: 0.8rem;
-	color: #0072ff;
-	justify-self: flex-start;
-	align-self: flex-start;
-	@media ${device.tabletL} {
-		text-align: center;
-	}
-`;
-
-const BigHeading = styled.h3`
-	font-size: 3.6rem;
-	font-weight: 600;
-	text-align: left;
-	margin-bottom: 1.6rem;
-	@media ${device.tabletL} {
-		text-align: center;
-	}
-`;
-
-const LightWeight = styled.span`
-	font-size: 3.6rem;
-	font-weight: 400;
 `;

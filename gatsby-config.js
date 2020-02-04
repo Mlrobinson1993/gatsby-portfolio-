@@ -43,13 +43,20 @@ module.exports = {
 			options: { path: `${__dirname}/posts`, name: `posts` },
 		},
 		{
-			resolve: `gatsby-plugin-postcss`,
+			resolve: `gatsby-source-filesystem`,
 			options: {
-				cssLoaderOptions: {
-					camelCase: false,
-				},
+				name: `images`,
+				path: `${__dirname}/posts/images/`,
 			},
 		},
+		// {
+		// 	resolve: `gatsby-plugin-postcss`,
+		// 	options: {
+		// 		cssLoaderOptions: {
+		// 			camelCase: false,
+		// 		},
+		// 	},
+		// },
 		{
 			resolve: 'gatsby-plugin-hubspot',
 			options: {

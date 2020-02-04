@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+
 import { Router } from '@reach/router';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import Home from './Home';
@@ -29,6 +29,7 @@ function App() {
 		<>
 			<SEO
 				title={title}
+				titleTemplate={title}
 				description={description || `nothin’`}
 				image={`${siteUrl}${image}`}
 				pathname={siteUrl}
