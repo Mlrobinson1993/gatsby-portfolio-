@@ -169,10 +169,6 @@ const SubmitBtn = styled.button`
 		white-space: normal;
 	}
 
-	// @media ${device.mobiles} {
-	// 	font-size: 0.8rem;
-	// 	padding: 1.5rem 2rem;
-	// }
 	&:hover {
 		background: rgba(0, 115, 255, 0.8);
 	}

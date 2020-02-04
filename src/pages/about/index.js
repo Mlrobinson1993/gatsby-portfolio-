@@ -8,7 +8,7 @@ import PageHeadings from '../../components/utilities/typography/PageHeadings';
 import RecentPosts from '../../components/sections/RecentPosts';
 import PrevWork from '../../components/sections/PrevWork';
 import Layout from '../../components/layout/Layout';
-// import mikey from '../../../posts/images/mikey-robinson-the-web-designer-developer.jpg';
+
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 

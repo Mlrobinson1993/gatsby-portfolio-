@@ -70,14 +70,3 @@ const LightWeight = styled.span`
 	font-size: 3.6rem;
 	font-weight: 400;
 `;
-
-const P = styled.p`
-	font-size: 1.2rem;
-	padding-left: 0.2rem;
-	margin-bottom: 1.6rem;
-	line-height: 2rem;
-	@media ${device.tabletL} {
-		text-align: center;
-		margin-bottom: 3rem;
-	}
-`;

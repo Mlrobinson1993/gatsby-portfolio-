@@ -29,9 +29,8 @@ export default function PrevWork() {
 		}
 	`);
 
-	let imgArr = [];
 	let imgObj = { marketingJob: {}, plastererJob: {}, painterJob: {} };
-	data.allFile.edges.forEach((node, index) => {
+	data.allFile.edges.forEach(node => {
 		if (node.node.base.includes('market')) {
 			imgObj.marketingJob.img = node.node.childImageSharp.fluid;
 			imgObj.marketingJob.altText = node.node.base

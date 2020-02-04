@@ -8,7 +8,7 @@ import Section from '../layout/Section';
 
 import SectionHeadings from '../utilities/typography/SectionHeadings';
 
-export default function RecentPosts({ data }) {
+export default function RecentPosts() {
 	return (
 		<Section background='white' bottom='10rem'>
 			<ContentContainer>
@@ -30,16 +30,5 @@ const ContentContainer = styled.div`
 
 	@media ${device.tablet} {
 		padding: 5rem 2rem 0rem 2rem;
-	}
-`;
-
-const CardContainer = styled.div`
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
-	flex-wrap: wrap;
-
-	@media ${device.tablet} {
-		justify-content: center;
 	}
 `;

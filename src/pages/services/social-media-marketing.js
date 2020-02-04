@@ -91,8 +91,3 @@ const ContentContainer = styled.section`
 	max-width: 1100px;
 	margin: 0 auto;
 `;
-
-//What I do
-//why its important
-//FAQ
-//specified CTA

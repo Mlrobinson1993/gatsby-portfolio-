@@ -1,9 +1,9 @@
 import React from 'react';
 import Navbar from './nav/Navbar';
-import useSiteMetadata from '../../hooks/useSiteMetadata';
 import Footer from '../sections/Footer';
 import { createGlobalStyle } from 'styled-components';
-
+import Favicon from 'react-favicon';
+import Logo from '../../../m-robinson-web-developer-logo.png';
 const GlobalStyle = createGlobalStyle`
 * {
 	margin: 0;
@@ -18,6 +18,7 @@ export default function Layout({ children }) {
 	return (
 		<>
 			<GlobalStyle />
+			<Favicon url={Logo} />
 			<Navbar />
 			{children}
 			<Footer />

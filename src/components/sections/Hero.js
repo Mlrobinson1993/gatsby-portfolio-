@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import device from '../utilities/MediaQueries';
 import Section from '../layout/Section';
@@ -22,7 +22,7 @@ export default function Hero() {
 						business?
 					</H2>
 					<CTAButtonHero
-						linkTo='/Contact/'
+						linkTo='/contact/'
 						text='Book a free strategy session'
 					/>
 				</TextContainer>

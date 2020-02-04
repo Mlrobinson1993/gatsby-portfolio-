@@ -4,7 +4,7 @@ import device from '../MediaQueries';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function BorderlessCard({ text, paragraph, BtnText, icon }) {
+export default function BorderlessCard({ text, paragraph, icon }) {
 	return (
 		<Card>
 			<IconContainer>
@@ -69,16 +69,3 @@ const P = styled.p`
 		text-align: center;
 	}
 `;
-
-// const Btn = styled(Link)`
-// 	text-decoration: none;
-// 	font-size: 1.2rem;
-// 	font-weight: 600;
-// 	transition: all 0.2s;
-// 	@media ${device.tablet} {
-// 		text-align: center;
-// 	}
-// 	&:hover {
-// 		text-decoration: underline;
-// 	}
-// `;

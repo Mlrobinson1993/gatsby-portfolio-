@@ -26,6 +26,7 @@
 		"gatsby-transformer-sharp": "^2.3.13",
 		"react": "^16.12.0",
 		"react-dom": "^16.12.0",
+		"react-favicon": "0.0.17",
 		"react-hooks": "^1.0.1",
 		"react-router-dom": "^5.1.2",
 		"react-scripts": "3.3.0",

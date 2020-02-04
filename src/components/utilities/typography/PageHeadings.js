@@ -80,14 +80,3 @@ const LightWeight = styled.span`
 	font-weight: 400;
 	text-align: ${props => props.align || ''};
 `;
-
-const P = styled.p`
-	font-size: 1.2rem;
-	padding-left: 0.2rem;
-	margin-bottom: 1.6rem;
-	line-height: 2rem;
-	@media ${device.tabletL} {
-		text-align: center;
-		margin-bottom: 3rem;
-	}
-`;

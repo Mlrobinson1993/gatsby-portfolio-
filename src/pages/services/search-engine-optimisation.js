@@ -92,8 +92,3 @@ const TextContainer = styled.div`
 		margin-bottom: 0;
 	}
 `;
-
-//What I do
-//why its important
-//FAQ
-//specified CTA

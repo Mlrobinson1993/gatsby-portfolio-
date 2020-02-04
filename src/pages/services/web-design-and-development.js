@@ -96,8 +96,3 @@ const ContentContainer = styled.div`
 	max-width: 1100px;
 	margin: 0 auto;
 `;
-
-//What I do
-//why its important
-//FAQ
-//specified CTA

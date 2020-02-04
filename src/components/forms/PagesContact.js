@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import device from '../utilities/MediaQueries';
 
 export default function HeroContact() {
-	// const [isFocused, setIsFocused] = useState(false);
-
 	return (
 		<ContentContainer>
 			<FormContainer>
@@ -157,7 +155,7 @@ const SubmitBtn = styled.button`
 		width: 100%;
 	}
 
-	\ &:hover {
+	&:hover {
 		background: rgba(0, 115, 255, 0.8);
 	}
 `;

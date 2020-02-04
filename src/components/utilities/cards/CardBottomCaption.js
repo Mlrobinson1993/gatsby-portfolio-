@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import device from '../MediaQueries';
 import Img from 'gatsby-image';
 
-//how can i change this to a functional component?
-
 class CardBottomCaption extends Component {
 	render() {
 		const { src, alt, title, service, color, linkTo } = this.props;
@@ -23,19 +21,6 @@ class CardBottomCaption extends Component {
 		);
 	}
 }
-// export default function CardBottomCaption() {
-// 	return (
-// 		<Card>
-// 			<ImageContainer>
-// 				<IMG src={src} alt={alt} />
-// 			</ImageContainer>
-// 			<CaptionContainer>
-// 				<CaptionBold>{title}</CaptionBold>
-// 				<CaptionLight>{service}</CaptionLight>
-// 			</CaptionContainer>
-// 		</Card>
-// 	);
-// }
 
 const Card = styled.figure`
 	display: flex;

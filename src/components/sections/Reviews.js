@@ -41,13 +41,6 @@ export default function Reviews() {
 						business='Jodie Pedwell - VA'
 						review='It was an absolute pleasure to work with Michael. He is a highly skilled Web Developer who is full of fantastic ideas. I am extremely impressed with the quality of his work and would not hesitate to hire him again in the future. Perfect communication, very professional, amazing value for money, reliable and trustworthy.'
 					/>
-					{/* <Review
-						flex='flex-end'
-						src={HyvestAvatar}
-						name='Malika'
-						business='The General Cafe'
-						review='It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,'
-					/> */}
 				</ReviewContainer>
 				<CTAContainer>
 					<CTAButtonOrange linkTo='/Contact/' text='Get a quote' />
@@ -75,10 +68,6 @@ const ContentContainer = styled.div`
 	@media ${device.tablet} {
 		padding: 1.25rem 2rem;
 	}
-`;
-
-const TextContainer = styled.div`
-	grid-row: 1;
 `;
 
 const ReviewContainer = styled.div`
@@ -110,32 +99,4 @@ const CTAContainer = styled.div`
 		align-items: flex-start;
 		padding-top: 5rem;
 	}
-`;
-
-const SmallHeading = styled.h2`
-	text-transform: uppercase;
-	font-size: 1.2rem;
-	padding-left: 0.2rem;
-	margin-bottom: 0.8rem;
-	color: #0072ff;
-	justify-self: flex-start;
-	align-self: flex-start;
-	@media ${device.tabletL} {
-		text-align: center;
-	}
-`;
-
-const BigHeading = styled.h3`
-	font-size: 3.6rem;
-	font-weight: 600;
-	text-align: left;
-	margin-bottom: 1.6rem;
-	@media ${device.tabletL} {
-		text-align: center;
-	}
-`;
-
-const LightWeight = styled.span`
-	font-size: 3.6rem;
-	font-weight: 400;
 `;
