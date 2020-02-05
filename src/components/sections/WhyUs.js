@@ -88,7 +88,7 @@ const WhyUsSection = styled.div`
 	}
 
 	@media ${device.mobileM} {
-		padding: 10rem 2rem 0rem 2rem;
+		padding: 0rem 2rem 0rem 2rem;
 	}
 `;
 

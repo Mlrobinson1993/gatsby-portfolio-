@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import device from '../utilities/MediaQueries';
 
 export default function HeroContact() {
-	// const [isFocused, setIsFocused] = useState(false);
-
 	return (
 		<FormContainer>
 			<ContactForm
@@ -20,17 +18,20 @@ export default function HeroContact() {
 						type='text'
 						name='name'
 						placeholder='Jane Smith'
+						required
 					></FormInput>
 					<Label htmlFor='email'>Email</Label>
 					<FormInput
 						type='text'
 						name='email'
 						placeholder='Janesmith@domain.co.uk'
+						required
 					></FormInput>
 					<Label htmlFor='message'>Message</Label>
 					<FormTextField
 						name='message'
 						placeholder='I need a...'
+						required
 					></FormTextField>
 					<input type='hidden' name='form-name' value='contact' />
 					<SubmitBtn>Book a free consultation</SubmitBtn>
@@ -80,6 +81,10 @@ const FormContainer = styled.div`
 	@media ${device.mobileL} {
 		top: 63%;
 	}
+
+	@media ${device.mobileM} {
+		top: 53%;
+	}
 `;
 
 const ContactForm = styled.form`
@@ -127,6 +132,7 @@ const FormInput = styled.input`
 
 	&:focus {
 		border: 1px solid #00c6ff;
+		outline: none;
 	}
 
 	@media ${device.mobileS} {
@@ -150,6 +156,7 @@ const FormTextField = styled.textarea`
 	}
 	&:focus {
 		border: 1px solid #00c6ff;
+		outline: none;
 	}
 `;
 
