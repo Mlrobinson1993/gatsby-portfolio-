@@ -26,13 +26,6 @@ const Btn = styled.button`
 
 	@media ${device.tabletL} {
 		text-transform: uppercase;
-	}
-
-	@media ${device.tablet} {
-		font-size: 1.2rem;
-	}
-
-	@media ${device.phablet} {
 		display: none;
 	}
 

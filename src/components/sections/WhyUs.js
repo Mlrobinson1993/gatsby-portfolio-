@@ -55,25 +55,28 @@ export default function WhyUs() {
 }
 
 const WhyUsSection = styled.div`
-	padding: 5rem 15rem;
+	padding: 5rem 15rem 5rem 15rem;
 
 	width: 100%;
 	display: grid;
-	grid-template-rows: 1fr 2fr;
+	grid-template-rows: 0.75fr 2fr;
 
 	@media ${device.laptop} {
-		padding: 2.5rem 7.5rem;
+		padding: 10rem 7.5rem;
 	}
 
 	@media ${device.tabletL} {
-		padding: 7rem 7.5rem 2.5rem 7.5rem;
+		padding: 7.5rem 7.5rem 2.5rem 7.5rem;
 	}
 	@media ${device.tablet} {
 		padding: 5rem 3.75rem 1.25rem 3.75rem;
 	}
+	@media ${device.phablet} {
+		padding: 12rem 3.75rem 1.25rem 3.75rem;
+	}
 
-	@media ${device.mobileM} {
-		padding: 0 2rem;
+	@media ${device.mobileL} {
+		padding: 10rem 2rem 0rem 2rem;
 		justify-content: center;
 	}
 `;
