@@ -63,7 +63,7 @@ export default function Services() {
 						/>
 					</Right>
 				</ContentRight>
-				<CTAButtonBlue text='See our services' linkTo='/services' />
+				{/* <CTAButtonBlue text='See our services' linkTo='/services' /> */}
 			</ContentContainer>
 		</Section>
 	);

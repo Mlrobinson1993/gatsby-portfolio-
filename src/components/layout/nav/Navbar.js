@@ -15,7 +15,7 @@ export default function Navbar() {
 
 	if (typeof window !== 'undefined') {
 		window.addEventListener('scroll', e => {
-			return window.scrollY > 150 ? setisscrolled(1) : setisscrolled(0);
+			return window.scrollY > 75 ? setisscrolled(1) : setisscrolled(0);
 		});
 	}
 
@@ -52,7 +52,7 @@ const Nav = styled.nav`
 	transition: all 0.4s;
 	background: ${props => (props.isscrolled ? 'white' : 'transparent')};
 	box-shadow: ${props =>
-		props.isscrolled && '0 2px 4px -1px rgba(0,0,0,0.25);'};
+		props.isscrolled && 'rgba(46, 50, 128, 0.15) 0px 6px 18px 0px;'};
 
 	@media ${device.tabletL} {
 		transition: all 0.4s;
