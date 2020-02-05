@@ -16,12 +16,7 @@ export default function Blog() {
 			<main className='blog'>
 				<Section>
 					<TitleContainer>
-						<PageHeadings
-							SmallText='Blog'
-							lineBreak={true}
-							BigText='Recent'
-							LightText='posts'
-						/>
+						<PageHeadings SmallText='Blog' BigText='Recent' LightText='posts' />
 					</TitleContainer>
 					<ContentContainer>{query(undefined, true)}</ContentContainer>
 				</Section>
