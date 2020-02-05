@@ -32,7 +32,8 @@ const Btn = styled.button`
 	}
 
 	@media ${device.mobileL} {
-		width: 100%;
+		width: auto;
+		margin-bottom: 2rem;
 	}
 
 	&:hover {

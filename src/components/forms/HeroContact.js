@@ -69,12 +69,16 @@ const FormContainer = styled.div`
 		top: 55%;
 	}
 
-	@media (max-width: 675px) {
-		top: 70%;
+	@media ${device.phablet} {
+		top: 67.5%;
 	}
 
-	@media ${device.mobileM} {
-		top: 60%;
+	@media (max-width: 475px) {
+		top: 77.5%;
+	}
+
+	@media ${device.mobileL} {
+		top: 63%;
 	}
 `;
 

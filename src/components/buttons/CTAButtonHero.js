@@ -32,7 +32,7 @@ const Btn = styled.button`
 		font-size: 1.2rem;
 	}
 
-	@media ${device.mobileL} {
+	@media ${device.phablet} {
 		display: none;
 	}
 

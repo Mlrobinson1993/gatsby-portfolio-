@@ -10,7 +10,7 @@ import SectionHeadings from '../utilities/typography/SectionHeadings';
 
 export default function RecentPosts() {
 	return (
-		<Section background='white' bottom='10rem'>
+		<Section background='white' bottom='5rem'>
 			<ContentContainer>
 				<SectionHeadings SmallText='Blog' BigText='Latest' LightText='posts' />
 				{/*pull first three blog posts from GraphQL */}

@@ -29,6 +29,7 @@ const TextContainer = styled.div`
 	flex-direction: column;
 	justify-content: flex-end;
 	padding: ${props => props.pad};
+
 	@media ${device.tabletL} {
 		align-items: center;
 	}

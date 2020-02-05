@@ -129,13 +129,17 @@ const IMGContainer = styled.figure`
 	height: 230px;
 	margin: 0 auto;
 	object-fit: cover;
+	object-position: 0% 50%;
 	overflow: hidden;
 	border-radius: 50%;
 	grid-column: 1;
 	border: 4px solid white;
 	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-
 	transform: scale(${props => props.scale});
+
+	picture img {
+		object-position: 0% 50% !important;
+	}
 	@media ${device.tabletL} {
 		margin: 7rem auto;
 	}

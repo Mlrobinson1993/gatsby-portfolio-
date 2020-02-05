@@ -89,10 +89,10 @@ const ContentContainer = styled.div`
 	}
 
 	@media ${device.mobileL} {
-		padding: 1.5rem;
+		padding: 3rem 1.5rem;
 	}
 	@media ${device.mobileM} {
-		padding: 0;
+		padding: 3rem 0;
 	}
 `;
 
@@ -117,7 +117,7 @@ const ContentRight = styled.div`
 	}
 
 	@media ${device.mobileM} {
-		padding: 2rem;
+		padding: 0 2rem;
 	}
 `;
 
@@ -149,7 +149,7 @@ const Left = styled.div`
 	padding-top: 4rem;
 
 	@media ${device.phablet} {
-		// padding-top: 0;
+		padding-top: 0;
 		display: flex;
 		flex-direction: column-reverse;
 	}

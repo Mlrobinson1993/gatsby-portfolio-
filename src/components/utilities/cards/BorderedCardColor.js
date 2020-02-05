@@ -44,6 +44,7 @@ const Card = styled.div`
 	@media ${device.tabletL} {
 		padding: 2rem;
 		width: 100%;
+		margin-bottom: 0;
 	}
 `;
 

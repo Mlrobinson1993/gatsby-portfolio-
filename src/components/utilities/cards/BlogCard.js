@@ -15,13 +15,17 @@ export default function BorderlessCard({
 }) {
 	return (
 		<Card>
-			<ImageContainer>
-				<IMG sizes={sizes} />
-			</ImageContainer>
+			<L to={slug}>
+				<ImageContainer>
+					<IMG sizes={sizes} />
+				</ImageContainer>
+			</L>
 			<TextContainer>
-				<CategoryHeading>{category}</CategoryHeading>
-				<H3>{text}</H3>
-				{para && <P>{para}</P>}
+				<L to={slug}>
+					<CategoryHeading>{category}</CategoryHeading>
+					<H3>{text}</H3>
+					{para && <P>{para}</P>}
+				</L>
 				<BottomContainer>
 					<Date datetime={date}>{date}</Date>
 					<Btn to={slug}>
@@ -42,7 +46,7 @@ const Card = styled.article`
 	align-items: space-around;
 	flex-direction: column;
 	grid-row: 2;
-	margin: 2rem;
+	margin: 2rem 0;
 	width: 325px;
 	&:hover {
 		span {
@@ -51,6 +55,10 @@ const Card = styled.article`
 	}
 
 	@media ${device.tablet} {
+		width: 100%;
+	}
+
+	@media ${device.mobileL} {
 		width: 100%;
 	}
 `;
@@ -107,6 +115,15 @@ const Btn = styled(Link)`
 	font-size: 1.4rem;
 	font-weight: 600;
 	transition: all 0.2s;
+`;
+const L = styled(Link)`
+	text-decoration: none;
+	font-size: inherit;
+	font-weight: inherit;
+	color: inherit;
+	&:hover {
+		color: #0072ff;
+	}
 `;
 
 const Date = styled.time`

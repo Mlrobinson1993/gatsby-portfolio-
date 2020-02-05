@@ -34,6 +34,17 @@ const Banner = styled.div`
 		align-items: center;
 		justify-content: space-between;
 	}
+
+	@media ${device.tabletL} {
+		padding: 3rem 0;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	@media ${device.phablet} {
+		padding: 3rem 2rem;
+	}
 `;
 
 const TextContainer = styled.div``;
@@ -45,6 +56,14 @@ const Heading = styled.h3`
 	@media ${device.tabletL} {
 		text-align: center;
 	}
+
+	@media (max-width: 475px) {
+		font-size: 2.4rem;
+	}
+
+	// @media ${device.mobileM} {
+	// 	font-size: 2.4rem;
+	// }
 `;
 
 const SubHeading = styled.h4`
@@ -54,5 +73,8 @@ const SubHeading = styled.h4`
 	@media ${device.tabletL} {
 		text-align: center;
 		margin-bottom: 2rem;
+	}
+	@media ${device.mobileM} {
+		font-size: 1.6rem;
 	}
 `;

@@ -30,8 +30,7 @@ const Card = styled.figure`
 
 	grid-row: 2;
 	margin: 2rem;
-	// max-width: 400px;
-	// min-width: 300px;
+	border-radius: 3px;
 	flex: 2 1 300px;
 	box-shadow: 0 20px 30px 0 rgba(76, 82, 103, 0.1),
 		0 30px 45px 0 rgba(76, 82, 103, 0.05);
@@ -45,7 +44,7 @@ const Card = styled.figure`
 	}
 
 	@media ${device.mobileL} {
-		margin: 0 auto;
+		// margin:auto;
 		max-width: 80%;
 	}
 `;

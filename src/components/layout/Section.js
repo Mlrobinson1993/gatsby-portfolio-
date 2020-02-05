@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import device from '../utilities/MediaQueries';
 export default function Section({ children, background, bottom }) {
 	return (
 		<Wrapper style={{ background: background, marginBottom: bottom }}>
@@ -11,5 +11,9 @@ export default function Section({ children, background, bottom }) {
 
 const Wrapper = styled.section`
 	width: 100vw;
-	margin-bottom: 5rem;
+	margin-bottom: ${props => props.marginBottom || '5rem'};
+
+	@media ${device.mobileL} {
+		margin-bottom: 0;
+	}
 `;

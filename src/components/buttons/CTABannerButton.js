@@ -30,9 +30,16 @@ const Btn = styled.button`
 		width: 40%;
 	}
 
-	@media ${device.mobileL} {
+	@media ${device.phablet} {
 		text-transform: uppercase;
-		width: 80%;
+		width: 60%;
+		font-size: 1.2rem;
+	}
+
+	@media ${device.mobileM} {
+		text-transform: uppercase;
+		width: 70%;
+		font-size: 1.2rem;
 	}
 
 	&:hover {

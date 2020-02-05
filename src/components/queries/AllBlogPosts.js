@@ -42,17 +42,16 @@ export const query = (size, hasExcerpt) => (
 					{data.allMdx.nodes
 						.slice(0, size || data.allMdx.nodes.length)
 						.map(({ id, frontmatter, excerpt, fields }) => (
-							<L key={id} to={fields.slug}>
-								<BlogCard
-									sizes={frontmatter.cover.childImageSharp.sizes}
-									category={frontmatter.category}
-									text={frontmatter.title}
-									para={hasExcerpt && excerpt}
-									btnText='Check it out'
-									date={frontmatter.date}
-									slug={fields.slug}
-								/>
-							</L>
+							<BlogCard
+								key={id}
+								sizes={frontmatter.cover.childImageSharp.sizes}
+								category={frontmatter.category}
+								text={frontmatter.title}
+								para={hasExcerpt && excerpt}
+								btnText='Check it out'
+								date={frontmatter.date}
+								slug={fields.slug}
+							/>
 						))}
 				</CardContainer>
 			);
@@ -68,10 +67,6 @@ const CardContainer = styled.div`
 
 	@media ${device.tablet} {
 		justify-content: center;
+		width: auto;
 	}
-`;
-
-const L = styled(Link)`
-	text-decoration: none;
-	color: inherit;
 `;

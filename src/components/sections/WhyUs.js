@@ -73,7 +73,8 @@ const WhyUsSection = styled.div`
 	}
 
 	@media ${device.mobileM} {
-		padding: 0;
+		padding: 0 2rem;
+		justify-content: center;
 	}
 `;
 
