@@ -10,7 +10,7 @@ class CardBottomCaption extends Component {
 			<Link href={linkTo} target='_blank' rel='noreferrer'>
 				<Card>
 					<ImageContainer>
-						<IMG sizes={src} alt={alt} />
+						<IMG sizes={src} alt={alt} loading='lazy' />
 					</ImageContainer>
 					<CaptionContainer>
 						<CaptionBold color={color}>{title}</CaptionBold>
