@@ -104,7 +104,7 @@ const TitleContainer = styled.div`
 	}
 
 	@media ${device.tablet} {
-		padding: 1.25rem 2rem;
+		padding: 7.5rem 1rem 0 1rem;
 	}
 `;
 
@@ -121,6 +121,13 @@ const IntroContainer = styled.div`
 		flex-direction: column;
 		justify-content: space-evenly;
 		padding: 5rem 3rem;
+	}
+
+	@media ${device.mobileL} {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		padding: 5rem 0rem;
 	}
 `;
 

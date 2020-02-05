@@ -56,21 +56,21 @@ export default ({ data, pageContext }) => {
 			<ContentContainer>
 				<MDXRenderer>{body}</MDXRenderer>
 				<LinkContainer>
-					{previous === false ? null : (
-						<>
-							{previous && (
-								<PrevLink to={previous.fields.slug}>
-									<span>&larr;</span> Previous Post
-								</PrevLink>
-							)}
-						</>
-					)}
 					{next === false ? null : (
 						<>
 							{next && (
 								<NextLink to={next.fields.slug}>
-									Next Post <span>&rarr;</span>
+									<span>&larr;</span> Previous Post
 								</NextLink>
+							)}
+							{previous === false ? null : (
+								<>
+									{previous && (
+										<PrevLink to={previous.fields.slug}>
+											Next Post <span>&rarr;</span>
+										</PrevLink>
+									)}
+								</>
 							)}
 						</>
 					)}
@@ -88,7 +88,7 @@ const TitleContainer = styled.div`
 	}
 
 	@media ${device.tablet} {
-		padding: 1.25rem 2rem;
+		padding: 5rem 2rem 1.25rem 2rem;
 	}
 `;
 
@@ -120,11 +120,17 @@ const H1 = styled.h1`
 	font-weight: 600;
 	text-align: center;
 	margin-bottom: 2rem;
+	@media ${device.tablet} {
+		font-size: 2.4rem;
+	}
 `;
 
 const Date = styled.time`
 	font-size: 1.6rem;
 	margin-bottom: 2rem;
+	@media ${device.tablet} {
+		font-size: 1.2rem;
+	}
 `;
 
 const Image = styled(Img)`
@@ -147,6 +153,7 @@ const NextLink = styled(Link)`
 	font-weight: 600;
 	font-size: 1.6rem;
 	transition: 0.2s;
+	margin-right: auto;
 	span {
 		font-size: 2rem;
 		transition: 0.2s;
@@ -165,7 +172,7 @@ const PrevLink = styled(Link)`
 	font-weight: 600;
 	font-size: 1.6rem;
 	transition: 0.2s;
-
+	margin-left: auto;
 	span {
 		font-size: 2rem;
 		transition: 0.2s;

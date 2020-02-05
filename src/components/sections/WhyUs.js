@@ -90,5 +90,6 @@ const CardContainer = styled.div`
 
 	@media ${device.tablet} {
 		justify-content: center;
+		margin-bottom: 0;
 	}
 `;

@@ -52,7 +52,7 @@ const Nav = styled.nav`
 	transition: all 0.4s;
 	background: ${props => (props.isscrolled ? 'white' : 'transparent')};
 	box-shadow: ${props =>
-		props.isscrolled && ' 0 1px 4px 0 rgba(76, 82, 103, 0.1);'};
+		props.isscrolled && '0 2px 4px -1px rgba(0,0,0,0.25);'};
 
 	@media ${device.tabletL} {
 		transition: all 0.4s;

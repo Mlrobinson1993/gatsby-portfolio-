@@ -42,6 +42,6 @@ const TitleContainer = styled.div`
 	}
 
 	@media ${device.tablet} {
-		padding: 1.25rem 2rem;
+		padding: 7.5rem 2rem 0 2rem;
 	}
 `;

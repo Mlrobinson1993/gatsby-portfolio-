@@ -56,7 +56,7 @@ const SmallHeading = styled.h1`
 	font-size: 1.2rem;
 	padding-left: 0.2rem;
 	margin-bottom: 0.8rem;
-	color: ${props => props.smallTextColor || '#4c5267'};
+	color: ${props => (props.smallTextColor ? props.smallTextColor : 'blue')};
 	@media ${device.tabletL} {
 		text-align: center;
 	}

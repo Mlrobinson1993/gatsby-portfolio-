@@ -44,5 +44,6 @@ const NavLinkContainer = styled.div`
 		top: 50%;
 		transform: translate(-50%, -50%);
 		flex-direction: column;
+		justify-content: space-evenly;
 	}
 `;

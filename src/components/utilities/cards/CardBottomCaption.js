@@ -44,8 +44,8 @@ const Card = styled.figure`
 	}
 
 	@media ${device.mobileL} {
-		// margin:auto;
-		max-width: 80%;
+		margin: 2rem 0;
+		max-width: 100%;
 	}
 `;
 

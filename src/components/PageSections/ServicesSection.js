@@ -101,6 +101,10 @@ const Para = styled.p`
 const LightWeight = styled.span`
 	font-weight: 400;
 	font-size: 3.6rem;
+	@media ${device.mobileM} {
+		font-size: 2.4rem;
+		text-align: center;
+	}
 `;
 
 const Caption = styled.figcaption`
