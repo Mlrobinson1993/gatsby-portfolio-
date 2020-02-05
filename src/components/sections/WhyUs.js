@@ -74,10 +74,21 @@ const WhyUsSection = styled.div`
 	@media ${device.phablet} {
 		padding: 12rem 3.75rem 1.25rem 3.75rem;
 	}
+	@media (max-width: 475px) {
+		padding: 15rem 3.75rem 1.25rem 3.75rem;
+	}
 
 	@media ${device.mobileL} {
-		padding: 10rem 2rem 0rem 2rem;
+		padding: 15rem 2rem 0rem 2rem;
 		justify-content: center;
+	}
+
+	@media ${device.mobileM} {
+		padding: 8rem 2rem 0rem 2rem;
+	}
+
+	@media ${device.mobileM} {
+		padding: 10rem 2rem 0rem 2rem;
 	}
 `;
 
