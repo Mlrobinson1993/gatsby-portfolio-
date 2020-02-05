@@ -62,7 +62,7 @@ export default function Footer() {
 				</SocialsContainer>
 				<LeadGenContainer
 					name='lead gen form'
-					method='post'
+					method='GET'
 					data-netlify='true'
 					data-netlify-honeypot='bot-field'
 				>

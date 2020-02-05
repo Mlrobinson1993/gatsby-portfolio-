@@ -4,6 +4,7 @@ import Footer from '../sections/Footer';
 import { createGlobalStyle } from 'styled-components';
 import Favicon from 'react-favicon';
 import Logo from '../../../m-robinson-web-developer-logo.png';
+
 const GlobalStyle = createGlobalStyle`
 * {
 	margin: 0;
@@ -11,6 +12,10 @@ const GlobalStyle = createGlobalStyle`
 	box-sizing: border-box;
 	font-size: 10px;
 	font-family: 'montserrat', sans-serif;
+}
+
+.leadin-message-wrapper {
+	font-size: 1.6rem;
 }
 `;
 

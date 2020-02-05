@@ -17,6 +17,7 @@ export default function HeroContact() {
 					<FormInput
 						type='text'
 						name='name'
+						method='GET'
 						placeholder='Jane Smith'
 						required
 					></FormInput>
