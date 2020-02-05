@@ -8,7 +8,7 @@ class Review extends Component {
 
 		return (
 			<ReviewCard flex={flex}>
-				<Avatar src={src} alt={alt}></Avatar>
+				<Avatar src={src} alt={alt} loading='lazy'></Avatar>
 				<TextContainer>
 					<Name>{name}</Name>
 					<Business>{business}</Business>
