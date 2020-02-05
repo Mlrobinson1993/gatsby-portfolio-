@@ -46,7 +46,7 @@ const Card = styled.article`
 	align-items: space-around;
 	flex-direction: column;
 	grid-row: 2;
-	margin: 2rem 0;
+	margin: 2rem;
 	width: 325px;
 	&:hover {
 		span {
@@ -60,6 +60,7 @@ const Card = styled.article`
 
 	@media ${device.mobileL} {
 		width: 100%;
+		margin: 2rem 0;
 	}
 `;
 
