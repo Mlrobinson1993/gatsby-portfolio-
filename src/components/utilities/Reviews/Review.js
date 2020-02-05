@@ -31,7 +31,7 @@ const ReviewCard = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 5fr;
 	max-height: 40rem;
-	overflow: scroll;
+	min-height: 15rem;
 
 	@media ${device.tablet} {
 		align-self: center;
@@ -88,7 +88,6 @@ const P = styled.p`
 `;
 
 const TextContainer = styled.div`
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

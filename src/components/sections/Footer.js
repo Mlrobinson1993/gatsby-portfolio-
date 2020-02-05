@@ -100,7 +100,8 @@ const LogoContainer = styled.div`
 `;
 
 const FooterLogo = styled.img`
-	max-width: 40%;
+	max-width: 70px;
+	max-height: 70px;
 `;
 
 const SocialsContainer = styled.div`
