@@ -29,7 +29,7 @@ function App() {
 		<>
 			<SEO
 				title={title}
-				titleTemplate={title}
+				titleTemplate='Business Growth Specialists'
 				description={description || `nothin’`}
 				image={`${siteUrl}${image}`}
 				pathname={siteUrl}

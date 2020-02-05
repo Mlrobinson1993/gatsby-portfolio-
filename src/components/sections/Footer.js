@@ -17,7 +17,10 @@ export default function Footer() {
 		<>
 			<ContentContainer>
 				<LogoContainer>
-					<FooterLogo src={logo} />
+					<FooterLogo
+						src={logo}
+						alt='Mikey Robinson - Web Developer Business Logo'
+					/>
 				</LogoContainer>
 				<SocialsContainer>
 					<IconContainer background='#3b5998'>

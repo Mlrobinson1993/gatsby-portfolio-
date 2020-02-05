@@ -23,12 +23,14 @@ export default function Reviews() {
 
 				<ReviewContainer>
 					<Review
+						alt='Paul The Painter Business Logo'
 						src={PTPAvatar}
 						name='Paul Read'
 						business='Paul The Painter Decorator'
 						review='From idea to completion, the whole process was so easy. It was a pleasure to work with Mike and have him on board. Very professional with advice, support and regular updates - truly excellent client service.'
 					/>
 					<Review
+						alt='Hyvest Inc. Business Logo'
 						flex='flex-end'
 						src={HyvestAvatar}
 						name='Gerald Something'
@@ -36,6 +38,7 @@ export default function Reviews() {
 						review="This is excellent work. I've worked with many web developers to create several sites. This was far and away the best experience. Highly recommended and will definitely work with again."
 					/>
 					<Review
+						alt='Jodie Pedwell - Virtual Assistant Business Logo'
 						src={VAAvatar}
 						name='Jodie Pedwell'
 						business='Jodie Pedwell - VA'

@@ -7,7 +7,7 @@ class CardBottomCaption extends Component {
 	render() {
 		const { src, alt, title, service, color, linkTo } = this.props;
 		return (
-			<Link href={linkTo} target='_blank'>
+			<Link href={linkTo} target='_blank' rel='noreferrer'>
 				<Card>
 					<ImageContainer>
 						<IMG sizes={src} alt={alt} />
