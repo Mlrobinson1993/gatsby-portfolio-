@@ -1,6 +1,6 @@
 const siteMetadata = {
 	title: `Mikey Robinson | Web Designer and Developer`,
-	description: `We can help craft your online presence with clear marketing strategies and engaging website design. We internationally with brands to offer services such as: website design, website development, digital marketing, search engine optimisation, social media management, social media marketing, branding, and logo design.`,
+	description: `We can help to boost your online presence with clear marketing strategies and engaging website design.`,
 	image: `./m-robinson-web-developer-logo.png`,
 	siteUrl: `https://mrobinsonwebdev.com`,
 	siteLanguage: `en-GB`,
