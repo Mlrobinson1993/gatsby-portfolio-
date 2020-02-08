@@ -29,6 +29,7 @@ export default function Footer() {
 							target='_blank'
 							rel='noopener noreferrer'
 						>
+							<span class='sr-only'>Facebook</span>
 							<FontAwesomeIcon
 								icon={faFacebookF}
 								size='3x'
@@ -42,6 +43,7 @@ export default function Footer() {
 							target='_blank'
 							rel='noopener noreferrer'
 						>
+							<span class='sr-only'>Twitter</span>
 							<FontAwesomeIcon
 								icon={faTwitter}
 								size='3x'
@@ -55,6 +57,7 @@ export default function Footer() {
 							target='_blank'
 							rel='noopener noreferrer'
 						>
+							<span class='sr-only'>Instagram</span>
 							<FontAwesomeIcon
 								icon={faInstagram}
 								size='3x'
@@ -135,6 +138,13 @@ const IconContainer = styled.div`
 	align-items: center;
 	background: ${props => props.background || ''};
 	background-image: ${props => props.backgroundImg || ''};
+
+	.sr-only {
+		font-size: 0;
+		height: 1px;
+		overflow: hidden;
+		display: block;
+	}
 `;
 
 const LeadGenContainer = styled.form`
