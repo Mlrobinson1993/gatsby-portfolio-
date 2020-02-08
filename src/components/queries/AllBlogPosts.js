@@ -48,7 +48,7 @@ export const query = (size, hasExcerpt) => (
 								category={frontmatter.category}
 								text={frontmatter.title}
 								para={hasExcerpt && excerpt}
-								btnText='Read blog post'
+								btnText='Read Post'
 								date={frontmatter.date}
 								slug={fields.slug}
 							/>

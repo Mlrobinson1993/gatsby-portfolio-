@@ -16,12 +16,14 @@ export default function BorderlessCard({
 	return (
 		<Card>
 			<L to={slug}>
+				<span className='sr-only'>Read blog post</span>
 				<ImageContainer>
 					<IMG sizes={sizes} />
 				</ImageContainer>
 			</L>
 			<TextContainer>
 				<L to={slug}>
+					<span className='sr-only'>Read blog post</span>
 					<CategoryHeading>{category}</CategoryHeading>
 					<H3>{text}</H3>
 					{para && <P>{para}</P>}
@@ -122,6 +124,13 @@ const L = styled(Link)`
 	font-size: inherit;
 	font-weight: inherit;
 	color: inherit;
+
+	.sr-only {
+		font-size: 0;
+		height: 1px;
+		overflow: hidden;
+		display: block;
+	}
 	&:hover {
 		color: #0072ff;
 	}

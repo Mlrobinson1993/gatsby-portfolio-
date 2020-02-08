@@ -33,7 +33,7 @@ export default function Reviews() {
 						alt='Hyvest Inc. Business Logo'
 						flex='flex-end'
 						src={HyvestAvatar}
-						name='Gerald Something'
+						name='Gerald Cabalfin'
 						business='Hyvest Inc.'
 						review="This is excellent work. I've worked with many web developers to create several sites. This was far and away the best experience. Highly recommended and will definitely work with again."
 					/>
