@@ -4,6 +4,8 @@ import Footer from '../sections/Footer';
 import { createGlobalStyle } from 'styled-components';
 import Favicon from 'react-favicon';
 import Logo from '../../../m-robinson-web-developer-logo.png';
+import { useSiteMetadata } from '../../hooks/useSiteMetadata';
+import SEO from 'react-seo-component';
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -20,8 +22,28 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export default function Layout({ children }) {
+	const {
+		title,
+		description,
+		image,
+		siteUrl,
+		siteLanguage,
+		siteLocale,
+		twitterUsername,
+	} = useSiteMetadata();
 	return (
 		<>
+			<SEO
+				title={title}
+				titleTemplate='Business Growth Specialists'
+				description={description || `nothin’`}
+				image={`${siteUrl}${image}`}
+				pathname={siteUrl}
+				siteLanguage={siteLanguage}
+				siteLocale={siteLocale}
+				twitterUsername={twitterUsername}
+			/>
+			;
 			<GlobalStyle />
 			<Favicon url={Logo} />
 			<Navbar />
