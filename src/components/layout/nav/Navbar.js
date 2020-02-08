@@ -58,6 +58,7 @@ const Nav = styled.nav`
 		transition: all 0.4s;
 		padding: 2rem 5rem;
 		display: flex;
+		overflow: visible;
 		flex-direction: row-reverse;
 		justify-content: space-between;
 		align-items: center;

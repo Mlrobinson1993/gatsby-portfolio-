@@ -36,7 +36,7 @@ const NavLinkContainer = styled.div`
 
 	@media ${device.tabletL} {
 		position: fixed;
-		height: 100vh;
+		height: 100%;
 		width: 100vw;
 		transition: 0.2s ease-out;
 		left: ${props => (props.isMenuOpen ? '50%' : '150%')};
