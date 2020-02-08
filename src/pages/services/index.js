@@ -8,6 +8,8 @@ import Section from '../../components/layout/Section';
 import CTABanner from '../../components/utilities/CTABanner';
 import Layout from '../../components/layout/Layout';
 import { useStaticQuery, graphql } from 'gatsby';
+import { useSiteMetadata } from '../../hooks/useSiteMetadata';
+import SEO from 'react-seo-component';
 
 export default function Services() {
 	const data = useStaticQuery(graphql`
@@ -54,8 +56,28 @@ export default function Services() {
 		}
 	});
 
+	const {
+		title,
+		description,
+		image,
+		siteUrl,
+		siteLanguage,
+		siteLocale,
+		twitterUsername,
+	} = useSiteMetadata();
+
 	return (
 		<>
+			<SEO
+				title={title}
+				titleTemplate='Business Growth Specialists'
+				description={description || `nothin’`}
+				image={`${siteUrl}${image}`}
+				pathname={siteUrl}
+				siteLanguage={siteLanguage}
+				siteLocale={siteLocale}
+				twitterUsername={twitterUsername}
+			/>
 			<Layout>
 				<main className='services'>
 					<Section>

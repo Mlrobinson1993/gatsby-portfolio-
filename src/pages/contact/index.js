@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { useSiteMetadata } from '../../hooks/useSiteMetadata';
+import SEO from 'react-seo-component';
+
 import styled from 'styled-components';
 import device from '../../components/utilities/MediaQueries';
 import Layout from '../../components/layout/Layout';
@@ -9,8 +12,27 @@ import PageHeadings from '../../components/utilities/typography/PageHeadings';
 import ContactIcons from '../../components/PageSections/ContactIcons';
 
 export default function Contact() {
+	const {
+		title,
+		description,
+		image,
+		siteUrl,
+		siteLanguage,
+		siteLocale,
+		twitterUsername,
+	} = useSiteMetadata();
 	return (
 		<>
+			<SEO
+				title={title}
+				titleTemplate='Business Growth Specialists'
+				description={description || `nothin’`}
+				image={`${siteUrl}${image}`}
+				pathname={siteUrl}
+				siteLanguage={siteLanguage}
+				siteLocale={siteLocale}
+				twitterUsername={twitterUsername}
+			/>
 			<Layout>
 				<main className='contact'>
 					<TitleContainer>

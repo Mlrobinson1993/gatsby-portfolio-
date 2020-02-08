@@ -9,6 +9,9 @@ import RecentPosts from '../../components/sections/RecentPosts';
 import PrevWork from '../../components/sections/PrevWork';
 import Layout from '../../components/layout/Layout';
 
+import { useSiteMetadata } from '../../hooks/useSiteMetadata';
+import SEO from 'react-seo-component';
+
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 
@@ -39,8 +42,28 @@ export default function About() {
 	`);
 
 	console.log(data.allFile.edges[0].node.id);
+	const {
+		title,
+		description,
+		image,
+		siteUrl,
+		siteLanguage,
+		siteLocale,
+		twitterUsername,
+	} = useSiteMetadata();
+
 	return (
 		<>
+			<SEO
+				title={title}
+				titleTemplate='Business Growth Specialists'
+				description={description || `nothin’`}
+				image={`${siteUrl}${image}`}
+				pathname={siteUrl}
+				siteLanguage={siteLanguage}
+				siteLocale={siteLocale}
+				twitterUsername={twitterUsername}
+			/>
 			<Layout>
 				<main className='about'>
 					<TitleContainer>

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Router } from '@reach/router';
-import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import Home from './Home';
 import About from './about/index';
 import Services from './services/index.js';
@@ -13,6 +12,7 @@ import Web from './services/web-design-and-development';
 import Contact from './contact/index';
 import Err from './404/index';
 
+import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import SEO from 'react-seo-component';
 
 function App() {
