@@ -30,6 +30,15 @@ module.exports = {
 				],
 				plugins: [
 					{
+						resolve: `gatsby-plugin-google-analytics`,
+						options: {
+							// The property ID; the tracking code won't be generated without it
+							trackingId: 'UA-147962044-1',
+							// Defines where to place the tracking script - `true` in the head and `false` in the body
+							head: true,
+						},
+					},
+					{
 						resolve: `gatsby-remark-images`,
 						options: {
 							maxWidth: 590,
@@ -55,6 +64,12 @@ module.exports = {
 				trackingCode: '6797356',
 				respectDNT: true,
 				productionOnly: true,
+			},
+		},
+		{
+			resolve: `gatsby-plugin-facebook-pixel`,
+			options: {
+				pixelId: '584128795760281',
 			},
 		},
 	],
