@@ -71,7 +71,10 @@ export default function Footer() {
 				>
 					<Legend>Join my mailing list</Legend>
 					<Fieldset>
+						<Label htmlFor='email'>Email</Label>
 						<LeadGenInput
+							name='email'
+							type='email'
 							placeholder='JaneDoe@domain.co.uk'
 							required
 						></LeadGenInput>
@@ -139,7 +142,7 @@ const LeadGenContainer = styled.form`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	grid-column: 4 / 6;
+	// grid-column: 4 / 6;
 	@media ${device.tabletL} {
 		display: none;
 	}
@@ -147,8 +150,8 @@ const LeadGenContainer = styled.form`
 
 const Fieldset = styled.fieldset`
 	border: none;
-	display: flex;
-	flex-wrap: nowrap;
+	white-space: nowrap;
+	min-width: 350px;
 `;
 
 const Legend = styled.legend`
@@ -157,6 +160,17 @@ const Legend = styled.legend`
 	font-weight: 600;
 	margin-bottom: 2rem;
 	text-align: center;
+`;
+
+const Label = styled.label`
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 `;
 const LeadGenInput = styled.input`
 	padding: 1.5rem 2rem;

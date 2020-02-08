@@ -65,9 +65,14 @@ const ContactForm = styled.form`
 `;
 
 const Label = styled.label`
-	font-size: 0.1rem;
-	color: transparent;
-	transition: all 0.2s;
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 `;
 
 const Title = styled.legend`
@@ -142,6 +147,7 @@ const SubmitBtn = styled.button`
 	text-transform: uppercase;
 	width: 50%;
 	align-self: flex-end;
+	margin-left: auto;
 	border: none;
 	border-radius: 3px;
 	font-size: 1.3rem;
