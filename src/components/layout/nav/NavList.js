@@ -19,7 +19,7 @@ export default function NavList({ isscrolled }) {
 			<NavItem isscrolled={isscrolled} linkItem='/services/' text='Services' />
 			<NavItem isscrolled={isscrolled} linkItem='/blog/' text='Blog' />
 			<NavMobiCTAButton
-				text='Call To Action'
+				text='GET IN TOUCH'
 				linkItem='/contact/'
 				mobDisplay='none'
 			/>
