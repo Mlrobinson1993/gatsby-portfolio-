@@ -14,7 +14,7 @@ export default function Hero() {
 			<HeroSection>
 				<TextContainer>
 					<H1>
-						We craft your online presence, so you have time to focus on the real
+						I craft your online presence, so you have time to focus on the real
 						work
 					</H1>
 					<H2>

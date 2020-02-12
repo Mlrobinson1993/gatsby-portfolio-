@@ -16,8 +16,8 @@ export default function WhyUs() {
 		<Section background='white'>
 			<WhyUsSection bottom='0'>
 				<SectionHeadings
-					SmallText='our qualities'
-					BigText="Why we're the"
+					SmallText='my qualities'
+					BigText="Why I'm the"
 					LightText='best option'
 					pad='0rem 4rem'
 					lineBreak='true'
@@ -28,19 +28,19 @@ export default function WhyUs() {
 						icon={faChartPie}
 						BtnText='Start getting my business noticed'
 						text='For Results'
-						paragraph='Our results speak for themselves, businesses who work with us have ranked higher on Google for worldwide searches. Our past client websites and marketing strategies have resulted in significant increases in organic lead generation, conversion rates and revenue.'
+						paragraph='My results speak for themselves, businesses who work with me have ranked higher on Google for worldwide searches. My past client websites and marketing strategies have resulted in significant increases in organic lead generation, conversion rates and revenue.'
 					/>
 					<BorderlessCard
 						icon={faCheckSquare}
 						BtnText='Start making your life easier'
-						text='Our Quality'
-						paragraph="Our business is built on customer satisfaction, so we're dedicated to staying up to date with the latest techniques, industry best practices, and technologies to ensure that you're only ever getting the best service possible. You and your business deserve it. "
+						text='My Quality'
+						paragraph="My business is built on customer satisfaction, so I'm dedicated to staying up to date with the latest techniques, industry best practices, and technologies to ensure that you're only ever getting the best service possible. You and your business deserve it. "
 					/>
 					<BorderlessCard
 						icon={faSeedling}
 						BtnText='Start growing my business'
 						text='Your Growth'
-						paragraph='We get to know you on a personal level, and we like you to get to know us. Why? We thrive on great relationships, and our best work is a reflection of that. We capitalise on your best features and display them in their best light so that the world can appreciate them too.'
+						paragraph='I get to know you on a personal level, and I like you to get to know me. Why? I thrive on great relationships, and my best work is a reflection of that. I capitalise on your best features and display them in their best light so that the world can appreciate them too.'
 					/>
 				</CardContainer>
 				<CTAButtonBlue

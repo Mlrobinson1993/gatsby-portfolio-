@@ -24,10 +24,10 @@ export default function Services() {
 						LightText='for your business'
 						padding='1rem'
 						lineBreak='true'
-						para="We spend time getting to know every client, who they are, what they do and how they do it. That's how we develop a perfect strategy to boost your brands growth and make your business a success."
+						para="I spend time getting to know every client, who they are, what they do and how they do it. That's how I develop a perfect strategy to boost your brands growth and make your business a success."
 					/>
 
-					<CTAButtonBlue text='See our services' linkTo='/services' />
+					<CTAButtonBlue text='See my services' linkTo='/services' />
 				</ContentLeft>
 				<ContentRight>
 					<Left>
@@ -59,7 +59,7 @@ export default function Services() {
 							icon={faSwatchbook}
 							size='4x'
 							heading='Branding Strategy'
-							paragraph="Great brands build great relationships and loyal customer bases, and that's what we're going to help you achieve."
+							paragraph="Great brands build great relationships and loyal customer bases, and that's what I'm going to help you achieve."
 						/>
 					</Right>
 				</ContentRight>

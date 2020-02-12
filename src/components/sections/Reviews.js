@@ -17,7 +17,7 @@ export default function Reviews() {
 				<SectionHeadings
 					SmallText='testimonials'
 					BigText='Trusted by'
-					LightText='our clients'
+					LightText='my clients'
 					lineBreak='true'
 				/>
 
