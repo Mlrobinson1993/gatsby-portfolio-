@@ -28,7 +28,7 @@ export default function WhyUs() {
 						icon={faChartPie}
 						BtnText='Start getting my business noticed'
 						text='For Results'
-						paragraph='Our results speak for themselves, businesses who work with us have ranked higher on Google in Birmingham, as well as the rest of the UK. Our past client websites and marketing strategies have resulted in significant increases in organic lead generation, conversion rates and revenue.'
+						paragraph='Our results speak for themselves, businesses who work with us have ranked higher on Google for worldwide searches. Our past client websites and marketing strategies have resulted in significant increases in organic lead generation, conversion rates and revenue.'
 					/>
 					<BorderlessCard
 						icon={faCheckSquare}
