@@ -71,6 +71,7 @@ export default function Footer() {
 					method='GET'
 					data-netlify='true'
 					data-netlify-honeypot='bot-field'
+					onSubmit={e => e.preventDefault()}
 				>
 					<Legend>Join my mailing list</Legend>
 					<Fieldset>
