@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import device from '../utilities/MediaQueries';
 
+import { Link } from 'gatsby';
 import BottomBar from '../layout/BottomBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -86,6 +87,9 @@ export default function Footer() {
 						<input type='hidden' name='form-name' value='contact' />
 					</Fieldset>
 				</LeadGenContainer>
+				<P>
+					To see my privacy policy, click <L to='/privacy-policy'>here</L>
+				</P>
 			</ContentContainer>
 			<BottomBar />
 		</>
@@ -203,4 +207,14 @@ const SubmitBtn = styled.button`
 	font-weight: 600;
 	font-size: 1.2rem;
 	letter-spacing: 0.2rem;
+`;
+
+const P = styled.p`
+	margin: 1.5rem 0 0 0;
+	font-size: 1.2rem;
+	color: white;
+`;
+const L = styled(Link)`
+	font-size: 1.2rem;
+	color: #0072ff;
 `;

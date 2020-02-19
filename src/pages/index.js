@@ -11,6 +11,7 @@ import Branding from './services/branding-and-strategy';
 import Web from './services/web-design-and-development';
 import Contact from './contact/index';
 import Err from './404/index';
+import PrivacyPolicy from './privacy-policy';
 
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import SEO from 'react-seo-component';
@@ -58,6 +59,7 @@ function App() {
 					<SMM path='/services/social-media-marketing' />
 					<Branding path='/services/branding-and-strategy' />
 					<Web path='/services/web-design-and-development' />
+					<PrivacyPolicy path='/privacy-policy' />
 				</Router>
 			</div>
 		</>
