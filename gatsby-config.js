@@ -1,7 +1,7 @@
 const siteMetadata = {
 	title: `Mikey Robinson | Web Designer and Developer`,
 	description: `We can help to boost your online presence with clear marketing strategies and engaging website design.`,
-	image: `./m-robinson-web-developer-logo.png`,
+	image: `/m-robinson-web-developer-logo.png`,
 	siteUrl: `https://mrobinsonwebdev.com`,
 	siteLanguage: `en-GB`,
 	siteLocale: `en_gb`,
