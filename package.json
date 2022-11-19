@@ -32,7 +32,7 @@
 		"react-favicon": "0.0.17",
 		"react-hooks": "^1.0.1",
 		"react-router-dom": "^5.1.2",
-		"react-scripts": "3.3.0",
+		"react-scripts": "5.0.1",
 		"react-seo-component": "^1.0.0",
 		"styled-components": "^5.0.0"
 	},
